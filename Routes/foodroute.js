@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-router.route('/').post((req,res)=>{
+router.route('/').get((req,res)=>{
     try{
         res.send({
             data:[global.food_Items,global.food_Category]
